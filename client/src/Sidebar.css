@@ -1,0 +1,68 @@
+:root {
+    --color-1st: #ffff;
+    --color-2nd: #5bc995;
+    
+    --menu-width-desktop: 240px;
+    --menu-width-tablet: 90px;
+    --menu-width-smartphone: 230px;
+
+    --icon-url-base: "http://www.entypo.com/images/";
+    --icon-url-dashboard: var(--icon-url-base) + "/gauge.svg";
+    --icon-url-customers: var(--icon-url-base) + "/briefcase.svg";
+    --icon-url-users: var(--icon-url-base) + "/users.svg";
+    --icon-url-settings: var(--icon-url-base) + "/tools.svg";
+}
+
+body {
+    background: var(--color-1st);
+    margin: 0;
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #fff;
+    /* padding-left: var(--menu-width-desktop); */
+}
+li{
+
+    margin-top: 85px;
+    margin-bottom: 41px;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+.helper {
+    background: rgba(0, 0, 0, 0.2);
+    color: var(--color-1st);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    padding: 1.2em 2em;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.helper span {
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 0.4em;
+    display: block;
+}
+
+.menu {
+    background: #0d1117;
+    height: 100vh;
+    width: var(--menu-width-desktop);
+    position: fixed;
+    left: 0;
+    z-index: 5;
+    outline: none;
+}
+

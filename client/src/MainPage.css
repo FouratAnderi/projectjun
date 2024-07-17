@@ -1,0 +1,16 @@
+.main-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height */
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
